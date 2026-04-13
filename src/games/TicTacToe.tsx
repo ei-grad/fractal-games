@@ -116,7 +116,7 @@ export default function TicTacToe() {
                 boxShadow: isWin ? '0 0 12px #ffc800' : undefined,
               }}
             >
-              {val === 'X' ? '✕' : val === 'O' ? '○' : ''}
+              {val === 'X' ? '✕' : val === 'O' ? '◯' : ''}
             </button>
           )
         })}
@@ -140,10 +140,10 @@ export default function TicTacToe() {
           }}
         >
           {winResult
-            ? `Победил игрок ${winResult.winner === 'X' ? '✕' : '○'} 🎉`
+            ? `Победил игрок ${winResult.winner === 'X' ? '✕' : '◯'} 🎉`
             : isDraw
             ? 'Ничья!'
-            : `Ход игрока: ${current === 'X' ? '✕' : '○'}`}
+            : `Ход игрока: ${current === 'X' ? '✕' : '◯'}`}
         </div>
 
         {/* Board */}
